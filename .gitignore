@@ -1,0 +1,31 @@
+# Ignore compiled Java class files
+*.class
+
+# Ignore log files
+*.log
+
+# Ignore build directories
+/bin/
+/build/
+
+# Ignore IntelliJ IDEA files
+.idea/
+*.iml
+
+# Ignore Eclipse project files
+.project
+.classpath
+.settings/
+
+# Ignore Maven target directory
+/target/
+
+# Ignore Gradle build directory
+/build/
+
+# Ignore Java temporary files
+*.war
+*.ear
+
+# Ignore VS Code folder
+.vscode/
