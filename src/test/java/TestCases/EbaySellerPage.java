@@ -1,6 +1,7 @@
 package TestCases;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -9,6 +10,7 @@ import Pages.SellPage;
 import Utils.ExcelHandler;
 import Utils.TakeScreenShots;
 
+//TEST CASE 3
 public class EbaySellerPage extends BaseTest {
     @Test
     public void HelpAndConatctInfoAssertion() {
@@ -57,7 +59,7 @@ public class EbaySellerPage extends BaseTest {
         excel.closeWorkbook();
     }
 
-    @AfterTest
+    @AfterClass
     public void close() {
         tearDown();
     }

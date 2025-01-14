@@ -1,6 +1,7 @@
 package TestCases;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -53,7 +54,7 @@ public class EbaySearchPrice extends BaseTest {
         }
     }
 
-    @AfterTest
+    @AfterClass
     public void close() {
         tearDown();
     }

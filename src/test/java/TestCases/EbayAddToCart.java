@@ -1,6 +1,7 @@
 package TestCases;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -12,6 +13,7 @@ import Pages.SearchResultsPage;
 import Utils.ExcelHandler;
 import Utils.TakeScreenShots;
 
+//TEST CASE 2
 public class EbayAddToCart extends BaseTest {
     @Test
     public void searchItem(){
@@ -58,7 +60,7 @@ public class EbayAddToCart extends BaseTest {
         }
     }
 
-    @AfterTest
+    @AfterClass
     public void close() {
         tearDown();
     }
